@@ -53,16 +53,24 @@
         onkeypress="Javascript: if (event.keyCode==13) ingresarFecha();"
       />
     </div>
-    <h4 class="center">Ingresa la cantidad de clases para atrás</h4>
+    <div class="center mb-4">
+      <h5 class="center" style="color: #37474f; font-weight: 400">Personalizar cantidad de clases</h5>
+      <p style="font-style: italic; font-weight: 1;" >Por defecto son 27 clases</p>
+      <input  type="checkbox" name="customCheck" id="customCheck" onchange="showCustom()">
+    </div>
+    
     <div
       class="container mt-3 mb-4 justify-content-center"
-      style="width: 400px"
+      style="width: 400px; display: none"
+      id="customQuantity"
     >
+    <h5 class="center" style="color: #37474f; font-weight: 400">Ingresa la cantidad de clases para atrás</h5>
       <input
         class="form-control"
         type="number"
         name="cantidadClases"
         id="cantidadClases"
+        value="27"
       />
     </div>
 
@@ -92,5 +100,6 @@
       integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
       crossorigin="anonymous"
     ></script>
+    <script src="script.js"></script>
   </body>
 </html>
